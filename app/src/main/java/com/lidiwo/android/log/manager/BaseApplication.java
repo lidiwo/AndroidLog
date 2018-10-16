@@ -3,6 +3,7 @@ package com.lidiwo.android.log.manager;
 import android.app.Application;
 
 import com.lidiwo.android.log.AndroidLog;
+import com.lidiwo.android.log.BuildConfig;
 
 /**
  * *****************************************************
@@ -16,6 +17,6 @@ public class BaseApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-        AndroidLog.init(true,"lidiwo");
+        AndroidLog.init(BuildConfig.DEBUG,"lidiwo");
     }
 }
